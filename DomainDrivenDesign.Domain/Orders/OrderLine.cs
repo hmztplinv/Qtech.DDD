@@ -1,6 +1,9 @@
-public sealed class OrderLine
+public sealed class OrderLine: Entity
 {
-    public Guid Id { get; set; }
+    public OrderLine(Guid id) : base(id)
+    {
+    }
+
     public Guid OrderId { get; set; }
     public Guid ProductId { get; set; }
     public Product Product { get; set; }

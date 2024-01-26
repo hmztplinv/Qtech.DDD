@@ -1,6 +1,10 @@
-public sealed class User
+
+public sealed class User: Entity
 {
-    public Guid Id { get; set; }
+    public User(Guid id) : base(id)
+    {
+    }
+
     public string Name { get; set; }
     public string Email { get; set; }
     public string Password { get; set;}

@@ -1,6 +1,9 @@
-public sealed class Product // sealed bu sınıfın kalıtım alınmasını engeller , kullanma sebebi performans artışıdır.
+public sealed class Product: Entity // sealed bu sınıfın kalıtım alınmasını engeller , kullanma sebebi performans artışıdır.
 {
-    public Guid Id { get; set; }
+    public Product(Guid id) : base(id)
+    {
+    }
+
     public string Name { get; set; }
     public int Quantity { get; set; }
     public decimal Price { get; set; }
