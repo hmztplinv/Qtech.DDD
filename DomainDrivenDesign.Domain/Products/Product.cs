@@ -6,4 +6,5 @@ public sealed class Product // sealed bu sınıfın kalıtım alınmasını enge
     public decimal Price { get; set; }
     public string Currency { get; set; }
     public Guid CategoryId { get; set; }
+    public Category Category { get; set; }
 }
